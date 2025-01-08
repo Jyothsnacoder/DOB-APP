@@ -1,0 +1,344 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #011120, #fbf0c4);
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#front_body {
+  display: none;
+}
+
+h2 {
+  color: white;
+}
+
+.container {
+  background: white;
+  background: url(../assets/images/BDAY\ image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  max-width: 500px; /* Increased to fit larger devices */
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tablink {
+  background-color: #eceeb1;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.tablink:hover {
+  background-color: #a8dadc;
+}
+
+.tablink.active {
+  background-color: #f7eeaf;
+  color: rgb(17, 2, 2);
+}
+
+.tabcontent {
+  display: none;
+  margin-top: 20px;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 15px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #9df3fb;
+  outline: none;
+}
+
+button {
+  padding: 12px 15px;
+  background-color: #f5f2a6;
+  color: rgb(15, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #90cdf6;
+}
+
+button:focus {
+  outline: 2px solid #91d9ef;
+}
+
+:root {
+  --gradient: linear-gradient(to right bottom, #1d3557, #a8dadc);
+  --dark: #1c1c1e;
+  --semi-dark: #2d2d30;
+  --light: #f4f4f9;
+  --link: #457b9d;
+}
+
+.text-loader {
+  font-size: 28px;
+  color: #210c0c;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  margin: 30px;
+  padding: 20px;
+  background: linear-gradient(45deg, #4caf50, #2a9d8f, #e63946, #a8dadc);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: pulse 1.5s infinite;
+}
+
+/* Birthday list styling */
+/* body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #011120, #fbf0c4);
+  color: #222;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+.birthday-app {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  /* background-color:#34332c; */
+  background: url(../assets/images/BDAY\ image.jpg);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.birthday-app h1 {
+  font-size: 2rem;
+  margin-top: -4rem;
+  color:rgb(242, 214, 100);
+}
+
+.birthday-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.birthday-form input {
+  padding: 15px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border 0.3s;
+}
+
+.birthday-form input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.birthday-form button {
+   padding: 12px 15px;
+  background-color: #f5f2a6;
+  color: rgb(15, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.birthday-form button:hover {
+  background-color: #388e3c;
+}
+
+#birthday-list {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.birthday-item {
+  margin: 18px 0;
+  padding: 18px;
+  border: 1px solid #e1bee7;
+  border-radius: 12px;
+  background-color: #f3e5f5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.birthday-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.birthday-item strong {
+  font-size: 1.3em;
+  color: #8e24aa;
+}
+
+.birthday-item .countdown {
+  margin-top: 6px;
+  font-size: 1em;
+  color: #7b1fa2;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .birthday-app {
+    padding: 15px;
+  }
+
+  .birthday-form input,
+  .birthday-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .birthday-app h1 {
+    font-size: 1.8rem;
+  }
+
+  .birthday-form input,
+  .birthday-form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .birthday-item {
+    padding: 15px;
+  }
+}
+
+
+/* Responsive styling for all devices */
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 700px;
+    padding: 3rem;
+  }
+
+  .tablink {
+    padding: 20px 25px;
+    font-size: 1.2rem;
+  }
+
+  input {
+    font-size: 1.1rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 15px 20px;
+  }
+}
+
+/* Tablets (landscape and portrait) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 2rem;
+  }
+
+  input {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .birthday-item {
+    width: 90%;
+  }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 767px) {
+  .container {
+    width: 95%;
+    max-width: 500px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .birthday-item {
+    padding: 15px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .birthday-item {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  input,
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
